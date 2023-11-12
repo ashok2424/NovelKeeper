@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { SnackbarProvider } from 'notistack';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename={"/NovelKeeper/"}>
     <SnackbarProvider>
       <div className="app-container" style={{ background: '#f4f4f4', minHeight: '100vh' }}>
         <App />
